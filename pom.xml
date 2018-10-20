@@ -16,6 +16,7 @@
 		<cassandra.version>3.5.0</cassandra.version>
 		<jersey.version>2.23.1</jersey.version>
 		<jax-rs.version>2.0.1</jax-rs.version>
+		<netty.version>4.1.22.Final</netty.version>
 	</properties>
 
 	<dependencies>
@@ -62,6 +63,7 @@
 			<version>${jersey.version}</version>
 		</dependency>
 
+		<!-- for cassandra -->
 		<dependency>
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-core</artifactId>
@@ -76,6 +78,25 @@
 			<groupId>com.datastax.cassandra</groupId>
 			<artifactId>cassandra-driver-extras</artifactId>
 			<version>${cassandra.version}</version>
+		</dependency>
+
+		<!-- use netty -->
+		<dependency>
+			<groupId>io.netty</groupId>
+			<artifactId>netty-all</artifactId>
+			<version>${netty.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-simple</artifactId>
+			<version>1.7.25</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.eclipse.paho</groupId>
+			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+			<version>1.1.1</version>
 		</dependency>
 
 	</dependencies>
